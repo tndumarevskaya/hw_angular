@@ -1,0 +1,15 @@
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-xs-10">
+        <app-shopping-edit></app-shopping-edit>
+        <hr>
+        <ul class="list-group">
+            <a class="list-group-item" style="cursor: pointer;" 
+            *ngFor="let ingredient of ingredients; let i=index;"
+            (click)="onEditItem(i)">
+               {{ingredient.name}} - {{ingredient.amount}} шт.
+               <button class="btn btn-dark" type="button"
+                (click)="onDelete(i)">-</button>
+            </a>
+        </ul>
+    </div>
+</div>

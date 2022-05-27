@@ -1,0 +1,9 @@
+<a [routerLink]='index.toString()' routerLinkActive="active" class="list-group-item clearfix">
+    <span class="float-right">
+        <img [src]="recipe.img" alt="{{recipe.title}}" class="img-responsive" style="max-height: 300px;">
+    </span>
+    <hr/>
+    <div class="float-left">
+        <h4 class="list-group-item-heading">{{recipe.title}}</h4>
+    </div>
+</a>
